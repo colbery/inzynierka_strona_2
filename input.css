@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width: 768px) {
+  #hero {
+    background-image: none;
+  }
+}
+
+.ficonW:hover {
+  filter: invert(70%) sepia(41%) saturate(3139%) hue-rotate(360deg)
+    brightness(102%) contrast(105%);
+}
+
+.ficonH:hover {
+  filter: invert(30%) sepia(41%) saturate(3139%) hue-rotate(360deg)
+    brightness(102%) contrast(105%);
+}

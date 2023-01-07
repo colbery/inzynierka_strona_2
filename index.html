@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script>
+      // It's best to inline this in `head` to avoid FOUC (flash of unstyled content) when changing pages or themes
+      if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+    <script src="./js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <title>proj</title>
+  </head>
+  <body class="dark:bg-darkish scroll-behavior: smooth;">
+    <!-- hero section -->
+
+    <nav
+      class="dark:bg-darkish bg-white dark:text-white sticky z-10 top-0 shadow-xl hidden md:block whitespace-nowrap"
+    >
+      <!-- flex container for nav items -->
+
+      <div class="w-full uppercase h-10 text-xl">
+        <div class="w-2/3 mx-auto">
+          <div class="justify-around my-auto flex flex-row space-x-4 m-10 pt-2">
+            <div>
+              <a href="#consist" class="hover:text-goldish font-opensans"
+                >Strona Główna</a
+              >
+            </div>
+            <div>
+              <a href="#instruction" class="hover:text-goldish font-opensans"
+                >Drukuj</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="consist ">
+      <div class="text-center mx-auto pt-10">
+        <div class="-space-y-5 my-10 dark:text-white">
+          <p class="text-5xl pt-5 uppercase dark:text-white font-sans">
+            podgląd
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="consist ">
+      <div class="bg-bgG">
+        <div class="w-3/4 text-center mx-auto pt-10">
+          <div class="">
+            <div class="flex flex-col md:flex-row align-middle">
+              <div class="md:w-1/2">
+                <img src="./images/img/dodesim.png" alt="" />
+              </div>
+              <div class="md:w-1/2">
+                <div class="flex flex-col">
+                  <div class="flex justify-around">
+                    <p
+                      class="rounded-lg bg-goldish uppercase tracking-thewidest text-xl py-3 px-5 align-center m-2 font-sans"
+                    >
+                      Prześlij
+                    </p>
+                    <p
+                      class="rounded-lg bg-goldish uppercase tracking-thewidest text-xl py-3 px-5 align-center m-2 font-sans"
+                    >
+                      pobierz
+                    </p>
+                  </div>
+
+                  <div class="flex justify-around">
+                    <img src="./images/img/platnosc.png" alt="" class="mt-10" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="w-full mt-20 py-5">
+      <div class="flex flex-row justify-center">
+        <p class="text-white text-center self-center text-xs">
+          ©Copyright 2022 Walksee??????
+          <br />
+          Wszelkie prawa zastrzeżone
+          <br />
+          Designed and created by Aleksander Pietrzak and Mateusz Starecki
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</html>
